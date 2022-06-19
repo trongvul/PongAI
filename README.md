@@ -79,9 +79,9 @@ END: Das Spiel beendet, solange ein Spieler 11 Punkte erreicht.
 
 #### 1-Spieler-modus 
 
-**ONE_PLAYER_DIFFICULT: **Das rechte Paddel wurde so programmiert, dass es dem Ball relativ zu seiner y-Position folgt. In dieser Einstellung kann der Gegner als unschlagbar angesehen werden und verliert nur dann, wenn der Ball zu schnell für das Paddel ist, um ihn zu treffen.
+**ONE_PLAYER_DIFFICULT:** Das rechte Paddel wurde so programmiert, dass es dem Ball relativ zu seiner y-Position folgt. In dieser Einstellung kann der Gegner als unschlagbar angesehen werden und verliert nur dann, wenn der Ball zu schnell für das Paddel ist, um ihn zu treffen.
 
-**ONE_PLAYER_EASY: **Eine Menge Trainingsbeispiele (Bx, By, Vx, Vy, Py) wird vom **ONE_PLAYER_DIFFICULT** gesammelt und in ein neuronales Netz eingespeist. Dieses neuronale Netze sagt dann die Wahrscheinlichkeit einer Abwärtsbewegung vorher und steuert sein Paddle entsprechend. Die Architektur umfasst 5 Einheiten in der Eingabeschicht, 16 Einheiten in der verborgenen Schicht mit der Aktivierung reLU und 1 Einheiten in der Ausgabeschicht mit der Aktivierung sigmoid. Alle Schichten sind vollständig verbunden. Im Projekt findet man das Notebook unter dem Verzeichnis *model*, in dem das Modell trainiert wird.
+**ONE_PLAYER_EASY:** Eine Menge Trainingsbeispiele (Bx, By, Vx, Vy, Py) wird vom **ONE_PLAYER_DIFFICULT** gesammelt und in ein neuronales Netz eingespeist. Dieses neuronale Netze sagt dann die Wahrscheinlichkeit einer Abwärtsbewegung vorher und steuert sein Paddle entsprechend. Die Architektur umfasst 5 Einheiten in der Eingabeschicht, 16 Einheiten in der verborgenen Schicht mit der Aktivierung reLU und 1 Einheiten in der Ausgabeschicht mit der Aktivierung sigmoid. Alle Schichten sind vollständig verbunden. Im Projekt findet man das Notebook unter dem Verzeichnis *model*, in dem das Modell trainiert wird.
 
 ## 3. Ergebnisse und Diskussion
 
